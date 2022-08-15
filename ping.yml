@@ -1,0 +1,15 @@
+---
+- hosts: all
+  gather_facts: true
+  become: yes
+  tasks:
+  - name: ping
+    action: ping
+
+  - name: Touch a file
+    file:
+      path: /etc/foo.conf
+      state: touch
+      owner: semaphore
+      group: semaphore
+

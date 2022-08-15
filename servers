@@ -1,0 +1,16 @@
+[all]
+iamrocky ansible_host=192.168.1.29
+ubuntusrv ansible_host=192.168.1.28
+
+[rocky]
+iamrocky
+
+[ubuntu]
+ubuntusrv
+
+[localhost]
+127.0.0.1 ansible_connection=local
+
+[linux:children]
+rocky
+ubuntu
