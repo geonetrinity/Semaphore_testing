@@ -14,5 +14,7 @@
   - name: Touch a file
     copy:
       src: ./authorized_keys
-      dest: ~/.ssh/authorized_keys
+      dest: /home/semaphore/.ssh/authorized_keys
+      owner: semaphore
+      group: semaphore
       mode: 400
