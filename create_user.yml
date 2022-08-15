@@ -9,6 +9,9 @@
   - name: james18
     user:
       name: semaphore
+      generate_ssh_key: yes
+      ssh_key_bits: 2048
+      ssh_key_file: .ssh/id_rsa
       shell: /bin/bash
 
   - name: Touch a file
