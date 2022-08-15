@@ -12,9 +12,7 @@
       shell: /bin/bash
 
   - name: Touch a file
-    file:
-      path: /etc/foo.conf
-      state: touch
-      owner: semaphore
-      group: semaphore
-
+    copy:
+      src: ./authorized_keys
+      dest: ~/.ssh/authorized_keys
+      mode: 400
