@@ -6,6 +6,11 @@
   - name: ping
     action: ping
 
+  - name: james18
+    user:
+      name: semaphore
+      shell: /bin/bash
+
   - name: Touch a file
     file:
       path: /etc/foo.conf
