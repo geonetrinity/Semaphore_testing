@@ -10,6 +10,6 @@
     file:
       path: /etc/foo.conf
       state: touch
-      owner: semaphore
-      group: semaphore
+#      owner: semaphore
+#      group: semaphore
 
