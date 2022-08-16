@@ -7,6 +7,6 @@
   command: "uptime"
   register: regis2
 
-- debug:
-    msg: "{{ regis }} {{ regis2.out }}"
+#- debug:
+#    msg: "{{ regis }} {{ regis2.out }}"
 
