@@ -1,5 +1,5 @@
 ---
 - hosts: localhost
   roles:
-    - { role: testmessage, MESSAGE: "1stFile", ENV: "Prod"}
-    - { role: testmessage, MESSAGE: "2ndFile", ENV: "Staging"}
+    - { role: ../roles/testmessage, MESSAGE: "1stFile", ENV: "Prod"}
+    - { role: ../roles/testmessage, MESSAGE: "2ndFile", ENV: "Staging"}
