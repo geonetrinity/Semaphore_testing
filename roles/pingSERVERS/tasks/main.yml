@@ -1,7 +1,7 @@
 ---
 - name: "Inital Connection Iesting"
   debug:
-    msg: "OS {{ ansible_distribution }} Kernel {{ ansible_kernel }}"  
+    msg: "OS {{ ansible_distribution }} Kernel {{ ansible_distribution_version }}"  
 
 - name: Execute the Uptime 
   shell: "uptime"
