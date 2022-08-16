@@ -7,5 +7,5 @@
   command: "uptime"
 
 - debug:
-    msg: "{{ regis }} {{ regis2 }}"
+    msg: "{{ regis }} {{ regis2.out }}"
 
