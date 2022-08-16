@@ -1,0 +1,12 @@
+---
+PROD_Environment: Production
+PROD_Application: Websphere
+PROD_Port: 8080
+
+STAGING_Environment: Staging
+STAGING_Application: Cognos
+STAGING_Port: 1234
+
+QA_Environment: Staging
+QA_Application: MessageBus
+QA_Port: 7777

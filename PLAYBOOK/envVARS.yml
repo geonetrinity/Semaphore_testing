@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  roles:
+    - { role: envVARS, MESSAGE: "1stFile", ENV: "PROD" }
+    - { role: envVARS, MESSAGE: "2ndFile", ENV: "STAGING" }
+    - { role: envVARS, MESSAGE: "3rdEntry", ENV: "QA" }

@@ -1,0 +1,22 @@
+---
+- name: "[1] User variables in ROLES"
+  debug:
+    msg: "this it the first message {{ MESSAGE }} for {{ ENV }}"  
+
+- name: "[2] Create a file based on ENV"
+  file:
+    path: "/tmp/out_{{ MESSAGE }}_{{ ENV }}.txt"
+    state: touch
+
+- name: "[3] ls the files"
+  shell:
+    ls -l /tmp/out_{{ MESSAGE }}_{{ ENV }}.txt
+  register: touch_out
+
+- debug:
+    msg: "{{ touch_out.stdout_lines }}"
+
+- name: "--- [4] When ENV == Prod ---"
+  debug:
+    msg: "Sample three when ENV={{ ENV }} matches prod {{ MESSAGE }}"
+  when: ENV == "PROD"

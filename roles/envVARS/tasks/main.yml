@@ -1,0 +1,9 @@
+---
+- name: "[1] User variables in ROLES"
+  ansible_user: root
+  debug:
+    msg: 
+      - "Environment based on VARIABLES : {{ ENV }}"
+      - "Environment: {{ vars[ENV + '_Environment'] }}"
+      - "Application: {{ vars[ENV + '_Application'] }}"
+      - "Port: {{ vars[ENV + '_Port'] }}"
