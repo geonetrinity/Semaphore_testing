@@ -12,13 +12,13 @@
 
 
 - name: echo hello
-    command: echo hello
-    register: result
+  command: echo hello
+  register: result
 
-  - debug: 
-      msg: "{{ result.stdout }}"
-    when: result|success
+- debug: 
+    msg: "{{ result.stdout }}"
+  when: result|success
 
-  - debug: 
-      msg: failed
-    when: result|failed
+- debug: 
+    msg: failed
+  when: result|failed
