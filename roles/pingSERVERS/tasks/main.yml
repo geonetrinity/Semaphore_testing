@@ -8,5 +8,5 @@
   register: upout
 
 - debug:
-    msg: "{{ upout }}"
+    msg: "{{ upout.stdout_lines }}"
 
