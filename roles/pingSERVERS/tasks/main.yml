@@ -8,4 +8,4 @@
   command: "uptime"
 
 - debug:
-    var: uptimeoutput.stdout_lines
+    msg: "{{ uptimeoutput.stdout_lines }}"
