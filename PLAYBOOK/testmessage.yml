@@ -1,8 +1,4 @@
 ---
 - hosts: localhost
   roles:
-    - role: testmessage
-      MESSAGE: "1sttime"
-      ENV: "PROD"
-
     - { role: testmessage, MESSAGE: "2ndFile", ENV: "Staging"}

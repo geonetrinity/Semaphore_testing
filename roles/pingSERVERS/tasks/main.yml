@@ -1,0 +1,11 @@
+---
+- name: "Inital Connection Iesting"
+  debug:
+    msg: "OS {{ ansible_distribution }} Kernel {{ ansible_distribution_version }}"  
+
+- name: Execute the Uptime 
+  register: uptimeoutput
+  command: "uptime"
+
+- debug:
+    var: uptimeoutput.stdout_lines
