@@ -4,8 +4,8 @@
     msg: "OS {{ ansible_distribution }} Kernel {{ ansible_distribution_version }}"  
 
 - name: Execute the Uptime 
-  register: uptimeoutput
   command: "uptime"
+  register: uptimeoutput
 
 - debug:
     msg: "{{ uptimeoutput.stdout_lines }}"
