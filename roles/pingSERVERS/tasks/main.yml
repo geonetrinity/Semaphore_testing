@@ -10,3 +10,9 @@
 - debug:
     msg: "{{ upout.stdout_lines }}"
 
+- name: TOP Command
+  shell: top -d 5 -b -o %MEM | head -n 15
+  register: topout
+
+- debug:
+    msg: "{{ topout.stdout_lines }}"
