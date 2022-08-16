@@ -5,19 +5,7 @@
 
 - name: Execute the Uptime 
   command: "uptime"
-  register: uptimeoutput
 
-#- debug:
-#    msg: "{{ uptimeoutput.stdout_lines }}"
+- debug:
+    msg: "{{ regis }} {{ regis2 }}"
 
-- name: echo hello
-  command: echo hello
-  register: result
-
-- debug: 
-    msg: "{{ result.stdout }}"
-  when: result|success
-
-- debug: 
-    msg: failed
-  when: result|failed
