@@ -7,9 +7,8 @@
   command: "uptime"
   register: uptimeoutput
 
-- debug:
-    msg: "{{ uptimeoutput.stdout_lines }}"
-
+#- debug:
+#    msg: "{{ uptimeoutput.stdout_lines }}"
 
 - name: echo hello
   command: echo hello
