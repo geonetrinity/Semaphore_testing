@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: all
   roles:
     - { role: ../roles/pingSERVERS }
 #    - { role: testmessage, MESSAGE: "2ndFile", ENV: "Staging"}
