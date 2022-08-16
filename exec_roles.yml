@@ -2,3 +2,4 @@
 - hosts: all
   roles:
     - { role: pingSERVERS }
+    - { role: testmessage, MESSAGE: "2ndFile", ENV: "Staging"}
