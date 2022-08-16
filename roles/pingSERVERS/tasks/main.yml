@@ -9,3 +9,16 @@
 
 - debug:
     msg: "{{ uptimeoutput.stdout_lines }}"
+
+
+- name: echo hello
+    command: echo hello
+    register: result
+
+  - debug: 
+      msg: "{{ result.stdout }}"
+    when: result|success
+
+  - debug: 
+      msg: failed
+    when: result|failed
