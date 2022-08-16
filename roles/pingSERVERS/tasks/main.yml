@@ -5,8 +5,8 @@
 
 - name: Execute the Uptime 
   command: "uptime"
-  register: regis2
+  register: upout
 
-#- debug:
-#    msg: "{{ regis }} {{ regis2.out }}"
+- debug:
+    msg: "{{ upout }}"
 
