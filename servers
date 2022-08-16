@@ -1,5 +1,5 @@
 [all]
-iamrocky ansible_host=192.168.1.29
+iamrocky ansible_host=192.168.1.33
 ubuntusrv ansible_host=192.168.1.31
 
 [rocky]
