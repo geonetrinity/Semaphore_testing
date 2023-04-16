@@ -7,15 +7,6 @@
   debug:
     msg:  "this it the first message {{ MESSAGE }} for {{ ENV }}"  
 
-- name: "[3] ls the files"
-  shell:
-    ls -l /tmp
-  delegate_to: localhost
-  register: touch_out
-
-- debug:
-    msg: "{{ touch_out.stdout_lines }}"
-
 - name: "--- [4] When ENV == Prod ---"
   debug:
     msg: "Sample three when ENV={{ ENV }} matches prod {{ MESSAGE }}"
