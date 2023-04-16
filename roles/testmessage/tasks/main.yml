@@ -10,4 +10,3 @@
 - name: "--- [4] When ENV == Prod ---"
   debug:
     msg: "Sample three when ENV={{ ENV }} matches prod {{ MESSAGE }}"
-  when: {{ ENV }} == "Prod"
