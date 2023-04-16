@@ -10,8 +10,8 @@
 - name: "[3] ls the files"
   shell:
     ls -l /tmp
-  register: touch_out
   delegate_to: localhost
+  register: touch_out
 
 - debug:
     msg: "{{ touch_out.stdout_lines }}"
