@@ -4,14 +4,13 @@
     msg: "this it the first message {{ MESSAGE }} for {{ ENV }}"  
 
 - name: "[2a] Create a file based on ENV"
-  file:
-    path: "/tmp/out_{{ MESSAGE }}_{{ ENV }}.txt"
-    state: touch
-  delegate_to: localhost
+  debug:
+    msg:  msg: "this it the first message {{ MESSAGE }} for {{ ENV }}"  
+
    
 - name: "[3] ls the files"
   shell:
-    ls -l /tmp/out_{{ MESSAGE }}_{{ ENV }}.txt
+    ls -l /tmp
   register: touch_out
   delegate_to: localhost
 
