@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  gather_facts: no
+  roles:
+    - { role: testmessage, MESSAGE: "1stFile", ENV: "Prod"}
+    #- { role: testmessage, MESSAGE: "2ndFile", ENV: "Staging"}
