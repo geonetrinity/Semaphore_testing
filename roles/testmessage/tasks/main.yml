@@ -5,9 +5,8 @@
 
 - name: "[2a] Create a file based on ENV"
   debug:
-    msg:  msg: "this it the first message {{ MESSAGE }} for {{ ENV }}"  
+    msg:  "this it the first message {{ MESSAGE }} for {{ ENV }}"  
 
-   
 - name: "[3] ls the files"
   shell:
     ls -l /tmp
