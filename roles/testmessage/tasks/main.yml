@@ -3,7 +3,7 @@
   debug:
     msg: "this it the first message {{ MESSAGE }} for {{ ENV }}"  
 
-- name: "[2] Create a file based on ENV"
+- name: "[2a] Create a file based on ENV"
   file:
     path: "/tmp/out_{{ MESSAGE }}_{{ ENV }}.txt"
     state: touch
